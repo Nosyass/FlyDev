@@ -26,6 +26,7 @@
 		<mapping class="tn.esprit.domain.FicheScolaire" />
 		<mapping class="tn.esprit.domain.TypeRestauration" />
 		<mapping class="tn.esprit.domain.User" />
+		<mapping class="tn.esprit.domain.Admin" />
 		
 
 
