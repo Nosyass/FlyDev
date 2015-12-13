@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Group fx:id="content" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.userloginController">
+<children><AnchorPane id="AnchorPane" layoutX="19.0" layoutY="13.0" maxHeight="500.0" maxWidth="700.0" minHeight="680.0" minWidth="1350.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: gray; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-border-radius: 10; -fx-background-size: 100% 100%;">
+<children>
+            <TextField fx:id="txtUser" layoutX="490.0" layoutY="238.0" prefHeight="30.0" prefWidth="297.0" promptText="Username">
+<font>
+<Font size="14.0" />
+</font>
+               <effect>
+                  <InnerShadow choke="0.1" color="#99b5c9" height="9.14" radius="14.4475" width="50.65" />
+               </effect>
+            </TextField>
+<PasswordField fx:id="txtPass" layoutX="490.0" layoutY="295.0" prefHeight="30.0" prefWidth="297.0" promptText="Password">
+<font>
+<Font size="14.0" />
+</font>
+            </PasswordField>
+            <Button fx:id="log" layoutX="490.0" layoutY="361.0" mnemonicParsing="false" onAction="#processLogin" prefHeight="30.0" prefWidth="297.0" styleClass="custem-button-input" stylesheets="/GUI/styles.css" text="Login" textFill="WHITE">
+<font>
+<Font name="System Bold" size="14.0" />
+</font>
+            </Button>
+</children></AnchorPane>
+</children>
+</Group>

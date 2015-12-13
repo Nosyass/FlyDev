@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Group fx:id="content" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.homeController">
+<children><AnchorPane id="AnchorPane" layoutX="19.0" layoutY="13.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: gray; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-border-radius: 10; -fx-background-size: 100% 100%;">
+<children>
+            <Button fx:id="log" layoutX="308.0" layoutY="194.0" mnemonicParsing="false" onAction="#processLogin" prefHeight="20.0" prefWidth="96.0" styleClass="custem-button-input" stylesheets="/GUI/styles.css" text="ShowTImer" textFill="WHITE">
+      <font>
+      <Font name="System Bold" size="14.0" />
+      </font>
+            </Button>
+<Pane layoutX="23.0" layoutY="14.0" prefHeight="201.0" prefWidth="243.0" AnchorPane.bottomAnchor="438.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="711.0" AnchorPane.topAnchor="14.0" />
+</children></AnchorPane>
+</children>
+</Group>
