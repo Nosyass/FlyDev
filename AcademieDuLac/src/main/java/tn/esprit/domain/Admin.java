@@ -7,9 +7,12 @@ import javax.persistence.Id;
 
 @Entity
 public class Admin {
+	
 	private  int id ;
 private String Login ;
 private String Password ;
+@Id
+@GeneratedValue(strategy=GenerationType.AUTO)
 public int getId() {
 	return id;
 }
@@ -17,8 +20,6 @@ public void setId(int id) {
 	this.id = id;
 }
 
-@Id
-@GeneratedValue(strategy=GenerationType.AUTO)
 public String getLogin() {
 	return Login;
 }
@@ -30,4 +31,8 @@ public String getPassword() {
 }
 public void setPassword(String password) {
 	Password = password;
-}}
+}
+
+
+
+}
