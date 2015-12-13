@@ -1,9 +1,13 @@
 package tn.esprit.domain;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -13,6 +17,7 @@ private int id ;
 private String niveau ;
 private String Libele ;
 private AnneeScolaire annee ;
+private List<FicheScolaire> fichesScolaires ;
 
 
 
@@ -42,6 +47,15 @@ public AnneeScolaire getAnnee() {
 }
 public void setAnnee(AnneeScolaire annee) {
 	this.annee = annee;
+}
+
+@OneToMany (mappedBy="classe")
+
+public List<FicheScolaire> getFichesScolaires() {
+	return fichesScolaires;
+}
+public void setFichesScolaires(List<FicheScolaire> fichesScolaires) {
+	this.fichesScolaires = fichesScolaires;
 }
 
 

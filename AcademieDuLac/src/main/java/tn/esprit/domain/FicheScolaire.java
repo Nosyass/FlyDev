@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 
 @Entity
@@ -17,6 +19,9 @@ public class FicheScolaire {
 	private double Resultat_trim1;
 	private double Resultat_trim2;
 	private double Resultat_trim3;
+	private Classe classe ;
+	private Eleve eleve ;
+	
 	
 	
 	@Id
@@ -68,6 +73,22 @@ public class FicheScolaire {
 	}
 	public void setResultat_trim3(double resultat_trim3) {
 		Resultat_trim3 = resultat_trim3;
+	}
+	
+	
+	@ManyToOne
+	public Classe getClasse() {
+		return classe;
+	}
+	public void setClasse(Classe classe) {
+		this.classe = classe;
+	}
+	@ManyToOne
+	public Eleve getEleve() {
+		return eleve;
+	}
+	public void setEleve(Eleve eleve) {
+		this.eleve = eleve;
 	}
 
 	

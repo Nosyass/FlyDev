@@ -1,11 +1,13 @@
 package tn.esprit.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
  
 public class Eleve {
@@ -25,6 +27,7 @@ public class Eleve {
 	private int Tel_mere;
 	private int Contact_durgence ;
 	private String Etat_Sante;
+	private List<FicheScolaire> ficheScolaires ;
 	
 	
 	
@@ -153,6 +156,14 @@ public class Eleve {
 
 	public void setEtat_Sante(String etat_Sante) {
 		Etat_Sante = etat_Sante;
+	}
+	@OneToMany (mappedBy="eleve")
+	public List<FicheScolaire> getFicheScolaires() {
+		return ficheScolaires;
+	}
+
+	public void setFicheScolaires(List<FicheScolaire> ficheScolaires) {
+		this.ficheScolaires = ficheScolaires;
 	}
 
 	
