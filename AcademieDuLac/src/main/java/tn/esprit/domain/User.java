@@ -1,6 +1,9 @@
 package tn.esprit.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class User {
@@ -14,6 +17,9 @@ public int getId() {
 public void setId(int id) {
 	this.id = id;
 }
+
+@Id
+@GeneratedValue(strategy=GenerationType.AUTO)
 public String getLogin() {
 	return Login;
 }
