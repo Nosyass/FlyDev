@@ -25,6 +25,8 @@
 		<mapping class="tn.esprit.domain.AnneeScolaire" />
 		<mapping class="tn.esprit.domain.FicheScolaire" />
 		<mapping class="tn.esprit.domain.TypeRestauration" />
+		<mapping class="tn.esprit.domain.User" />
+		
 
 
 		<!-- <mapping resource="com/mkyong/user/DBUser.hbm.xml"></mapping> -->
