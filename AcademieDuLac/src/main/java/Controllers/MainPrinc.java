@@ -17,7 +17,7 @@ public class MainPrinc extends Application {
 	public static String g_LoginFile = "/GUI/userLogin.fxml";
 	public static String g_Home = "home";
 	public static String g_homeFile = "/GUI/home.fxml";
-//fkfskfskd
+
 	@Override
 	public void start(Stage primaryStage) {
 		try {
